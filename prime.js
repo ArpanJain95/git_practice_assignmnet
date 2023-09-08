@@ -1,15 +1,10 @@
-function isPrime(number){
-    if(number < 2){
-      return false;
-    }
-  
-    for(let i = 2; i * i <= number; i++){
-      if(number % 1 === 0){
-        return false;
-      }
-    }
-  
-    return true;
+function isPrime(num){
+  let count=0;
+for(let i=0; i<=num; i++)
+  {
+    (num%i==0)?count++:null;
   }
-  
-  console.log(isPrime(2)
+(count==2)?console.log("Yes"):console.log("No")
+}
+isPrime(6);
+isPrime(7);
